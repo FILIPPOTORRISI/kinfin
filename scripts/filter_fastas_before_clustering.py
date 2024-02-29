@@ -30,7 +30,8 @@ class SeqObj():
         self.length = len(seq)
 
     def print_fixed(self):
-        print ">%s.%s\n%s" % (self.prefix, self.header, self.seq)
+        print(f">{self.prefix}.{self.header}\n{self.seq}")
+
 
     def non_terminal_stops(self):
         non_terminal = self.seq.rstrip("*")
